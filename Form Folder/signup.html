@@ -1,46 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup Page</title>
-    <link rel="stylesheet" href="signup.css">
-</head>
-<body>
-
-
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="icon" href="banana_minion.jpg" type="image/x-icon">
+  </head>
+  <body>
     <div class="container">
+      <div class="logo">
+        <img src="banana_minion.jpg" alt="Logo" />
+      </div>
+      <h2>Create Account</h2>
+      <p class="subtitle">Sign up to get started</p>
 
-        <h2>Create Account</h2>
+      <form>
+        <div class="input-group">
+          <input type="text" id="firstname" required />
+          <label for="firstname">First Name</label>
+        </div>
 
-        <form action="">
+        <div class="input-group">
+          <input type="text" id="lastname" required />
+          <label for="lastname">Last Name</label>
+        </div>
 
-            <label for="firstname">First Name</label><br>
-            <input type="text" name="firstname" id="firstname" placeholder="Enter First Name"> <br>
+        <div class="input-group">
+          <input type="email" id="email" required />
+          <label for="email">Email</label>
+        </div>
 
-            <label for="lastname">Last Name</label> <br>
-            <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name"> <br>
+        <div class="input-group">
+          <input type="password" id="password" required />
+          <label for="password">Password</label>
+        </div>
 
-            <label for="email">Email</label> <br>
-            <input type="email" name="email" id="email" placeholder="Enter Email"> <br>
+        <div class="input-group">
+          <input type="password" id="confirmpassword" required />
+          <label for="confirmpassword">Confirm Password</label>
+        </div>
 
+        <div class="role-group">
+          <p>Select Role</p>
 
-            <label for="password">Password</label><br>
-            <input type="password" name="password" id="password" placeholder="Enter Password"> <br>
+          <label class="role-option">
+            <input type="radio" name="role" value="user" required />
+            <span>User</span>
+          </label>
 
-            <label for="confirmpassword">Confirm Password</label><br>
-            <input type="confirmpassword" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password"> <br>
+          <label class="role-option">
+            <input type="radio" name="role" value="admin" />
+            <span>Admin</span>
+          </label>
+        </div>
 
-            <button id="login" name="login" value="login">Create Account</button>
+        <button class="btn">Create Account</button>
+      </form>
 
-        </form>
-
-        
-      <p>Don't have an Account? <a href="login.html"> Sign Up</p></a>
+      <p class="login-link">
+        Already have an account? <a href="login.html">Login</a>
+      </p>
     </div>
-    
-</body>
-</html>
-    
-</body>
+  </body>
 </html>

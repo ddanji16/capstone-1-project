@@ -1,40 +1,164 @@
-body{
-    background-color: rgb(75, 73, 73);
-    display: flex;
-    justify-content: center;
-}
-.container{
-    margin-top: 100px;
-    text-align: center;
-    height: 550px;
-    width: 650px;
-    border: 1px solid black;
-    border-radius: 29px;
-    background-color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  }
 
-}
-.container h2{
-    margin-top: 60px;
-    margin-bottom: 39px;
-}
-form{
-    margin-top: 20px;
-}
-form input{
-    padding: 12px;
-    border-radius: 10px;
-    width: 300px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+/* Background with gradient animation */
+body {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient(135deg, #4facfe, #00f2fe);
 }
 
 
-form #login{
-    padding: 15px;
-    border-radius: 10px;
-    width: 150px;
-    margin-top: 30px;
+/* Logo positioning */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
-p{
-    margin-top: 30px;
+
+/* Logo image */
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.logo img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+.container {
+    position: relative; /* ADD THIS */
+}
+/* Main container */
+.container {
+width: 380px;
+padding: 40px;
+border-radius: 20px;
+background: white;
+text-align: center;
+box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+animation: fadeIn 1s ease;
+}
+
+/* Title */
+.container h2 {
+margin-bottom: 10px;
+}
+
+.subtitle {
+color: gray;
+margin-bottom: 30px;
+}
+
+/* Input group with floating labels */
+.input-group {
+position: relative;
+margin-bottom: 25px;
+}
+
+.input-group input {
+width: 100%;
+padding: 12px;
+border: 2px solid #ddd;
+border-radius: 10px;
+outline: none;
+transition: 0.3s;
+}
+
+/* Focus effect */
+.input-group input:focus {
+border-color: #4facfe;
+box-shadow: 0 0 8px rgba(79,172,254,0.5);
+}
+
+/* Floating label */
+.input-group label {
+position: absolute;
+top: 50%;
+left: 12px;
+transform: translateY(-50%);
+color: gray;
+pointer-events: none;
+transition: 0.3s;
+background: white;
+padding: 0 5px;
+}
+
+/* Move label when typing */
+.input-group input:focus + label,
+.input-group input:valid + label {
+top: -8px;
+font-size: 12px;
+color: #4facfe;
+}
+
+/* Button */
+.btn {
+width: 100%;
+padding: 12px;
+border: none;
+border-radius: 10px;
+background: linear-gradient(135deg, #4facfe, #00c6ff);
+color: white;
+font-size: 16px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+/* Hover animation */
+.btn:hover {
+transform: translateY(-2px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Click effect */
+.btn:active {
+transform: scale(0.98);
+}
+
+/* Links */
+.forgot {
+display: block;
+margin-top: 15px;
+color: #4facfe;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.forgot:hover {
+text-decoration: underline;
+}
+
+.signup {
+margin-top: 20px;
+}
+
+.signup a {
+color: #4facfe;
+text-decoration: none;
+}
+
+.signup a:hover {
+text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(20px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
 }
