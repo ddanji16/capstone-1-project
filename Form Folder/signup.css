@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(75, 73, 73);
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin-top: 100px;
+    text-align: center;
+    height: 750px;
+    width: 650px;
+    border: 1px solid black;
+    border-radius: 29px;
+    background-color: white;
+
+}
+.container h2{
+    margin-top: 60px;
+    margin-bottom: 39px;
+}
+form{
+    margin-top: 20px;
+}
+form input{
+    padding: 12px;
+    border-radius: 10px;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+form #login{
+    padding: 15px;
+    border-radius: 10px;
+    width: 150px;
+    margin-top: 30px;
+}
+p{
+    margin-top: 30px;
+}
