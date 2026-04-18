@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+
+
+?>
+
+
+
+
+
+
 <!doctype html>
 
 <html lang="en">
@@ -36,7 +48,7 @@
       <a href="#" class="forgot">Forgot Password?</a>
 
       <p class="signup">
-        Don't have an account? <a href="signup.html">Sign Up</a>
+        Don't have an account? <a href="signup.php">Sign Up</a>
       </p>
     
       

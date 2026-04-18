@@ -180,7 +180,7 @@ position: relative;
 padding-left: 35px;
 font-size: 16px;
 margin-left: 10px;
-left: 50px;
+left: 60px;
 }
 
 /* Outer circle */
@@ -211,4 +211,12 @@ border-radius: 50%;
 /* Hover effect */
 .role-option:hover span::before {
 box-shadow: 0 0 6px rgba(67,233,123,0.6);
+}
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    margin-top: 10px;
 }
